@@ -1,13 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #abd1dc;
+}
+.img-logo {
+  width: 70%;
+}
+.Nav-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 15px 40px;
+}
+.Links-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Links-section li {
+  list-style: none;
+  margin-right: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.Links-section li a {
+  text-decoration: none;
+  color: #5d6e1e;
+  padding: 0.7rem;
+  border-radius: 1rem;
+}
+.Links-section li a:hover {
+  color: white;
+  background-color: #5d6e1e;
+}
+/* about section*/
+
+.About-container {
+  width: 50%;
+  margin: 1rem auto;
+  padding: 2rem;
+  background-color: #d3e7ee;
+  border-radius: 10px;
+  box-shadow: 4px 10px 15px 0px rgba(0, 0, 0, 0.7);
+}
+.section-title {
+  font-size: 2rem;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 3.5rem;
+  margin-top: 1rem;
+}
+/*Error section*/
+.error-page {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 3rem;
+}
+.btn {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #5d6e1e;
+  border: 2px solid #5d6e1e;
+  padding: 0.45rem 0.8rem;
+  display: inline-block;
+  transition: all 0.3s;
+  cursor: pointer;
+  font-size: 0.8rem;
+  background: transparent;
+  border-radius: 1rem;
+  display: inline-block;
+}
+.btn:hover {
+  color: white;
+  background-color: #5d6e1e;
+}
+.error-container h1 {
+  margin: 1rem 0;
+}
+.error-container a {
+  text-decoration: none;
+}
+/*Loading page*/
+.loader,
+.loader:before,
+.loader:after {
+  background: transparent;
+  -webkit-animation: load1 1s infinite ease-in-out;
+  animation: load1 1s infinite ease-in-out;
+  width: 1em;
+  height: 4em;
+}
+.loader {
+  color: #5d6e1e;
+  text-indent: -9999em;
+  margin: 88px auto;
+  margin-top: 20rem;
+  position: relative;
+  font-size: 3rem;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+.loader:before,
+.loader:after {
+  position: absolute;
+  top: 0;
+  content: "";
+}
+.loader:before {
+  left: -1.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.loader:after {
+  left: 1.5em;
+}
+@-webkit-keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Home secion*/
+.HOME-section {
+  width: 75%;
+  margin: auto;
 }
+
+/*cocktail section*/
+.header {
+  text-align: center;
+  margin: 1rem 0;
+  text-transform: uppercase;
+  color: #5d6e1e;
+}
+.cocktail-section {
+  margin: auto ;
+  width: 100%;
+}
+.cocktail-Title {
+  margin: 1rem 0;
+  font-weight: 700;
+}
+.coctails-center {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4 ,1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 30px;
+}
+.coctails-container {
+  background: #ddddda;
+  box-shadow: 4px 10px 15px 0px rgba(0, 0, 0, 0.7);
+  transition: all 1s;
+  border-radius: 5px;
+  width: 15rem;
+  margin: auto;
+}
+.section-img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px 5px 0px 0px;
+}
+.footer-section {
+  padding: 1rem;
+}
+.footer-section h3 {
+  font-size: 15px;
+  color: #000;
+}
+.footer-section h4 {
+  font-size: 15px;
+  color: #000;
+}
+.footer-section p {
+  font-size: 15px;
+  color: #000;
+  font-weight: 700;
+}
+.btn-details {
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  color: #000;
+  border: 1px solid #000;
+  padding: 0.3rem 0.3rem;
+  transition: all 0.3s;
+  cursor: pointer;
+  font-size: 0.7rem;
+  background: transparent;
+  border-radius: 0.3rem;
+  margin-top: 0.7rem;
+  display: inline-block;
+  text-decoration: none;
+}
+/*search section*/
+
+.search-container {
+  width: 75%;
+  margin:2rem auto;
+  padding: 3rem 0;
+  border-radius: 10px;
+  background-color: #d3e7ee;
+  box-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+}
+.search-section {
+  margin: auto;
+  width: 50%;
+}
+.form-section label {
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.25rem;
+  color: #000;
+}
+.form-section input {
+  width: 100%;
+  padding: 0.3rem;
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #8fcde4;
+}
+.error-msg{
+  color:white;
+  text-align: center;
+  
+}
+/*Single cocktail section*/
+.cocktail-details{
+  width: 25%;
+  margin: auto;
+  background-color: #d3e7ee;
+  border-radius: 10px;
+  padding: 2rem;
+}
+.cocktail-details img{
+  width: 100%;
+  border-radius: 10px;
+}
+.drink-info span{
+  margin-right: 0.5rem ;
+  background-color: #3a8699;
+  border-radius: 4px;
+  padding: 0 0.1rem;
+}
+.drink-info p{
+  margin-bottom: 0.5rem ;  
+}
+.ingrediant-data {
+  color :rgb(0, 0, 0);
+  background-color: transparent !important;
+}
+
+@keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+
+
